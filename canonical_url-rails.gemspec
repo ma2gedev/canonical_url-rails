@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["takayuki.1229@gmail.com"]
   spec.description   = %q{URL canonicalization for Rails.}
   spec.summary       = %q{URL canonicalization for Rails.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/ma2gedev/canonical_url-rails"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
