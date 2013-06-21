@@ -3,11 +3,6 @@ module CanonicalURL
     module ActionController
       extend ActiveSupport::Concern
 
-      included do
-        # setup default canonical url
-        canonical_url -> c { c.request.url.split("?").first }
-      end
-
       module ClassMethods
         def canonical_url url, filter_options = {}
           before_filter do |controller|
