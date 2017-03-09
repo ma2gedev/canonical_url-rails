@@ -5,7 +5,7 @@ module CanonicalURL
 
       module ClassMethods
         def canonical_url url, filter_options = {}
-          before_filter do |controller|
+          before_filter(filter_options) do |controller|
             controller.send :canonical_url, url
           end
         end
